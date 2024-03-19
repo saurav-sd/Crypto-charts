@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Cryptocurrency Time Series Visualization
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project aims to visualize cryptocurrency time series data using React.js and Echarts.
 
-## Available Scripts
+## Requirements
 
-In the project directory, you can run:
+- React.js based UI
+- Echarts for React for chart rendering
+- Dataset: [gemini_BTCUSD_2020_1min.csv](https://www.kaggle.com/datasets/roopahegde/cryptocurrency-timeseries-2020)
+- Parent-child component structure
+- Dropdown for column selection
+- Toggle for chart type (line or bar)
+- Dynamically updating canvas based on selections
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Approach
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Set Up React.js UI: 
+Create a React.js project if you haven't already. You can use tools like Create React App for this purpose. Set up your project structure and install necessary dependencies.
 
-### `npm test`
+## Integrate Echarts: 
+Use the echarts-for-react package to integrate Echarts into your React application. This package provides components to easily render Echarts charts within React components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Fetch and Preprocess Data: 
+Fetch the cryptocurrency time series dataset, specifically the gemini_BTCUSD_2020_1min.csv file. You can use libraries like axios for making HTTP requests. Preprocess the data as needed, including reducing the data size if required.
 
-### `npm run build`
+## Parent-Child Component Structure: 
+Create a parent component responsible for handling data initialization and passing it to child components. The child components will render the line chart and bar chart based on the data received from the parent.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Dropdown for Column Selection: 
+Implement a dropdown menu to select the column for visualization. Use options like Open, High, Low, Close, and Volume. Set the default option as the first one.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Toggle for Chart Type: 
+Implement a toggle button to switch between line chart and bar chart visualization. By default, the line chart should be enabled.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Rendering Charts: 
+Based on the selected column and chart type, render the appropriate Echarts visualization. For line charts, use continuous data, and for bar charts, you can bin the data by months and display the average value for each month.
 
-### `npm run eject`
+## Update Canvas Dynamically: 
+Ensure that the canvas is updated dynamically whenever there is a change in the selected column or chart type.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Styling: 
+Style your components as per your design requirements using CSS. You can use any CSS frameworks or libraries as per your preference.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##  Output :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Line chart :
 
-## Learn More
+![alt text](LineChart.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Bar chart :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![alt text](BarChart.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

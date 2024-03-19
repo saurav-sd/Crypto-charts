@@ -1,0 +1,58 @@
+.container {
+    padding: 20px;
+  }
+  
+  .title {
+    font-weight: bold;
+    border: 2px solid #387ADF;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .chartContainer {
+    border: 2px solid blue;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFF5FF;
+  }
+  
+  .chartWrapper {
+    border: 2px solid #D2DE32;
+    align-items: center;
+    margin: 20px;
+    background-color: white;
+  }
+  
+  .chartControls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .selectContainer {
+    margin-left: 20px;
+  }
+  
+  .toggleButtonContainer {
+    margin-right: 20px;
+    background-color: #DFF5FF;
+  }
+  
+  .chart {
+    border: 2px solid #387ADF;
+    margin: 3px 20px 20px 20px;
+  }
+  
+  .toggleButton {
+    text-transform: none !important;
+    width: 70px;
+    border: 2px solid #3468C0 !important;
+    color: black !important;
+  }
+
+  .selectInput{
+    padding: 0px 20px 0px 10px;
+    height: 40px;
+    background-color: #DFF5FF;
+    border: 2px solid #3468C0;
+  }

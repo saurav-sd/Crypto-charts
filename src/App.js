@@ -1,4 +1,3 @@
-import './App.css';
 import Charts from './Components/Charts';
 
 function App() {
